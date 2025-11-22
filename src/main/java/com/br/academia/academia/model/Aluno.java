@@ -5,6 +5,7 @@ import lombok.Data;
 import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -19,6 +20,8 @@ public class Aluno {
     @CPF
     @Column(nullable = false)
     private String numero;
+
+    private LocalDate dataDeNascimento;
 
     private LocalDateTime dataMatricula;
 }

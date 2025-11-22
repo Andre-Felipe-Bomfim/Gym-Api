@@ -3,6 +3,8 @@ package com.br.academia.academia.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
+
 @Entity
 @Table(name = "equipamentos")
 @Data
@@ -15,4 +17,6 @@ public class Equipamento {
     @Column(nullable = false)
     private String marca;
     private String qualidade;
+    @Column(nullable = false)
+    private LocalDate dataDeEntradaNaAcademia;
 }
