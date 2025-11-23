@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 public class Aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private String id;
     @Column(nullable = false)
     private String name;
     @CPF
